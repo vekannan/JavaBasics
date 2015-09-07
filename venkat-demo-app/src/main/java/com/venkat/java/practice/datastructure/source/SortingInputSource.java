@@ -18,12 +18,14 @@ public class SortingInputSource {
 	
 	public static int[] getDefultSizeUnsortedIntArray(){
 		LOGGER.log(Level.INFO, "Creating defaultsize(10) array of type int");
-		unsortedRandomArray = new int[10];
+		unsortedRandomArray = new int[defaultArraySize];
 		for(int i = 0; i < defaultArraySize; i++ ){
 			unsortedRandomArray[i] =  (int)(Math.random()*100);
 		}
 		LOGGER.log(Level.INFO, "Unsorted Array ==>"+Arrays.toString(unsortedRandomArray));
 		return unsortedRandomArray;
 	}
+	
+	
 
 }
